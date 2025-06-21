@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask built-in server logs
+*.log
+
+# Environment variables and config
+.env
+*.env
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# macOS and Linux
+.DS_Store
+*.swp
+*.swo
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Model artifacts
+*.pkl
+*.joblib
+
+# Dataset or temp files
+*.csv
+*.tsv
+*.xlsx
+*.db

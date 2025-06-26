@@ -18,6 +18,18 @@ mlb_skills = joblib.load("model/mlb_skills.pkl")
 
 print("Model loaded successfully...")
 
+allowed_skills = mlb_skills.classes_.tolist()
+allowed_interests = mlb_interests.classes_.tolist()
+
+@app.route("/options", methods=["GET"])
+def get_allowed_options():
+    return jsonify({
+        "skills": mlb_skills.classes_.tolist(),
+        "interests": mlb_interests.classes_.tolist()
+    })
+# so that give this same skills to the user
+
+
 @app.route("/predict", methods=["POST"])
 def predict_role():
     data = request.get_json()
